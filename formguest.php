@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form id="add-guest">
+    <form action="database.php" method="POST" >
         <h2> Add Guest</h2>
         
          <div class="form-field">
