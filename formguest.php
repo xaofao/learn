@@ -1,3 +1,14 @@
+<?php 
+$is_loggedin=$db->check_login_status();
+if(!$is_loggedin){
+    if($_SERVER['REQUEST_URI']!='/guest/login.php'){
+        header("Location:login.php");
+        exit();
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
